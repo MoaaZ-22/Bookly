@@ -2,7 +2,7 @@ import 'package:bookly/core/resources/strings_manager.dart';
 import 'package:bookly/core/resources/values_manager.dart';
 import 'package:flutter/material.dart';
 import 'best_seller_list_view.dart';
-import 'custom_app_bar.dart';
+import 'custom_home_app_bar.dart';
 import 'featured_book_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -15,7 +15,7 @@ class HomeViewBody extends StatelessWidget {
       slivers: [
         const SliverAppBar(
           elevation: AppValues.v0,
-          flexibleSpace: CustomAppBar(),
+          flexibleSpace: CustomHomeAppBar(),
           snap: true,
           floating: true,
 

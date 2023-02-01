@@ -4,8 +4,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../../core/resources/assets_manager.dart';
 import '../../../../../core/resources/values_manager.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
+class CustomHomeAppBar extends StatelessWidget {
+  const CustomHomeAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

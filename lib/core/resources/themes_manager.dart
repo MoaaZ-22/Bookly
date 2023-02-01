@@ -16,6 +16,7 @@ ThemeData getAppTheme() => ThemeData.dark().copyWith(
   /// Text Style
   textTheme: TextTheme(
       displayLarge: getSimiBoldStyle(color: ColorsManager.white, fontSize: AppValues.v30),
+      displayMedium: getSectraRegularStyle(color: ColorsManager.white),
       headlineMedium: getRegularStyle(color: ColorsManager.grey, fontSize: AppValues.v14),
       titleMedium: getMediumStyle(color: ColorsManager.lightGrey, fontSize: FontSize.s14),
       bodyLarge: getBoldStyle(color: ColorsManager.white, fontSize: AppValues.v20),

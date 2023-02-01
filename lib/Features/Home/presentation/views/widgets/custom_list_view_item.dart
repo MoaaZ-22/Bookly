@@ -12,7 +12,7 @@ class CustomListViewItem extends StatelessWidget {
       alignment: Alignment.bottomRight,
       children: [
         AspectRatio(
-          aspectRatio: 2.7 / 4,
+          aspectRatio: AppValues.imageAspectRatio,
           child: Container(
             decoration: BoxDecoration(
                 image: const DecorationImage(image: AssetImage(AssetsManager.featuredBook), fit: BoxFit.cover),

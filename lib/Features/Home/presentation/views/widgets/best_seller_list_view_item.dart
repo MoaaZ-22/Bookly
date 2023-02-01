@@ -1,6 +1,5 @@
+import 'package:bookly/Features/Home/presentation/views/widgets/custom_rate_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import '../../../../../core/resources/assets_manager.dart';
 import '../../../../../core/resources/colors_manager.dart';
 import '../../../../../core/resources/fonts_manager.dart';
@@ -16,11 +15,11 @@ class BestSellerListViewItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(AppValues.v8),
       onTap: ()=> Navigator.pushNamed(context, Routes.bookDetailsRoute),
       child: SizedBox(
-        height: ResponsiveValues.mediaQueryHeight(context, 0.36),
+        height: ResponsiveValues.mediaQueryHeight(context, AppValues.v0_36),
         child: Row(
           children: [
             AspectRatio(
-              aspectRatio: 2.6 / 3.9,
+              aspectRatio: AppValues.bestSellerAspectRatio,
               child: Container(
                 decoration: BoxDecoration(
                     image: const DecorationImage(image: AssetImage(AssetsManager.featuredBook), fit: BoxFit.cover),
@@ -36,17 +35,17 @@ class BestSellerListViewItem extends StatelessWidget {
                 children: [
                   /// ToDo : Change Text With Modle Text
                   SizedBox(
-                    width: ResponsiveValues.mediaQueryWidth(context, 0.5),
+                    width: ResponsiveValues.mediaQueryWidth(context, AppValues.v0_5),
                     child: Text('Harry Potter and the Goblet of Fire',
-                      maxLines: 2,
+                      maxLines: AppValues.v2,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontSize: AppValues.v20, fontFamily: FontConstance.fontFamily2, color: ColorsManager.white),),
                   ),
                   const SizedBox(height: AppValues.v8,),
                   SizedBox(
-                    width: ResponsiveValues.mediaQueryWidth(context, 0.5),
+                    width: ResponsiveValues.mediaQueryWidth(context, AppValues.v0_5),
                     child: Text('J.K. Rowling',
-                      maxLines: 1,
+                      maxLines: AppValues.v1.toInt(),
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.headlineMedium,),
                   ),
@@ -62,11 +61,9 @@ class BestSellerListViewItem extends StatelessWidget {
                         ),
                       ),
                       const Spacer(),
-                      const Icon(FontAwesomeIcons.solidStar, color: ColorsManager.yellow, size: AppValues.v16,),
-                      const SizedBox(width: AppValues.v6,),
-                      Text('4.0', style: Theme.of(context).textTheme.titleMedium?.copyWith(fontSize: AppValues.v16, color: ColorsManager.white),),
-                      const SizedBox(width: 9,),
-                      Text('(2390)', style: Theme.of(context).textTheme.titleMedium?.copyWith(fontSize: AppValues.v16,),)
+                      const CustomRateWidget(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                      )
                     ],
                   )
                 ],
