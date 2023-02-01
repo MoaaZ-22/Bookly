@@ -42,6 +42,7 @@ dependencies:
   font_awesome_flutter: ^10.3.0
   animate_do: ^3.0.2
   equatable: ^2.0.5
+  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
