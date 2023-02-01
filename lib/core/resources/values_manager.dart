@@ -14,6 +14,7 @@ class AppValues
   static const v0_15 = 0.15;
   static const v0 = 0.0;
   static const v1 = 1.0;
+  static const v1_5 = 1.5;
   static const v2 = 2;
   static const v3 = 3.0;
   static const v4 = 4.0;

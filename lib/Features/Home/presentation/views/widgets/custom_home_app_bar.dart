@@ -1,3 +1,4 @@
+import 'package:bookly/core/resources/routes_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -15,7 +16,9 @@ class CustomHomeAppBar extends StatelessWidget {
         children: [
           SvgPicture.asset(AssetsManager.logo, height: AppValues.v20, width: AppValues.v75,),
           const Spacer(),
-          IconButton(onPressed: (){}, icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: AppValues.v20,), splashRadius: AppValues.v25,)
+          IconButton(onPressed: (){
+            Navigator.pushNamed(context, Routes.searchRoute);
+          }, icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: AppValues.v20,), splashRadius: AppValues.v25,)
         ],
       ),
     );

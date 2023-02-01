@@ -1,13 +1,13 @@
 import 'package:bookly/Features/Home/presentation/views/widgets/custom_rate_widget.dart';
 import 'package:flutter/material.dart';
-import '../../../../../core/resources/assets_manager.dart';
-import '../../../../../core/resources/colors_manager.dart';
-import '../../../../../core/resources/fonts_manager.dart';
-import '../../../../../core/resources/routes_manager.dart';
-import '../../../../../core/resources/values_manager.dart';
+import '../resources/assets_manager.dart';
+import '../resources/colors_manager.dart';
+import '../resources/fonts_manager.dart';
+import '../resources/routes_manager.dart';
+import '../resources/values_manager.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({Key? key}) : super(key: key);
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

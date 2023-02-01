@@ -22,4 +22,36 @@ ThemeData getAppTheme() => ThemeData.dark().copyWith(
       bodyLarge: getBoldStyle(color: ColorsManager.white, fontSize: AppValues.v20),
       bodySmall: getRegularStyle(color: ColorsManager.grey),
   ),
+
+    /// Input Decoration Theme (Text FormFiled)
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: const EdgeInsets.all(AppValues.v8),
+      hintStyle:
+      getRegularStyle(color: ColorsManager.white60, fontSize: FontSize.s14),
+      errorStyle: getRegularStyle(color: ColorsManager.lightRed),
+
+      /// Enable Border
+      enabledBorder: const OutlineInputBorder(
+          borderSide:
+          BorderSide(color: ColorsManager.white60, width: AppValues.v1_5),
+          borderRadius: BorderRadius.all(Radius.circular(AppValues.v8))),
+
+      /// Focused Border
+      focusedBorder: const OutlineInputBorder(
+          borderSide:
+          BorderSide(color: ColorsManager.white60, width: AppValues.v1_5),
+          borderRadius: BorderRadius.all(Radius.circular(AppValues.v8))),
+
+      /// Error Border
+      errorBorder: const OutlineInputBorder(
+          borderSide:
+          BorderSide(color: ColorsManager.lightRed, width: AppValues.v1_5),
+          borderRadius: BorderRadius.all(Radius.circular(AppValues.v8))),
+
+      /// Focused Error Border
+      focusedErrorBorder: const OutlineInputBorder(
+          borderSide:
+          BorderSide(color: ColorsManager.white60, width: AppValues.v1_5),
+          borderRadius: BorderRadius.all(Radius.circular(AppValues.v8))),
+    )
 );
