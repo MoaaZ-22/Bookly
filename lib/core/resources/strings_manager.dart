@@ -8,3 +8,9 @@ class StringsManager
   static const search = 'Search';
   static const searchResult = 'Search Result';
 }
+
+
+class EndPoints
+{
+  static const newestBooks = 'volumes?q=subject:programming';
+}
