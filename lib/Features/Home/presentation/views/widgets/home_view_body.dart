@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:bookly/core/resources/strings_manager.dart';
 import 'package:bookly/core/resources/values_manager.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,9 @@ class HomeViewBody extends StatelessWidget {
               const SizedBox(
                 height: AppValues.v4,
               ),
-              const FeaturedBookListView(),
+              FadeIn(
+                  duration: const Duration(milliseconds: AppValues.durationV350),
+                  child: const FeaturedBookListView()),
               const SizedBox(
                 height: AppValues.v24,
               ),
@@ -44,8 +47,10 @@ class HomeViewBody extends StatelessWidget {
             ],
           ),
         ),
-        const SliverToBoxAdapter(
-          child: BookListView(),
+         SliverToBoxAdapter(
+          child: FadeIn(
+              duration: const Duration(milliseconds: AppValues.durationV350),
+              child: const BookListView()),
         )
       ],
     );

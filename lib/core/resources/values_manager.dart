@@ -37,6 +37,7 @@ class AppValues
   static const v100 = 100.0;
   static const durationV200 = 200;
   static const durationV250 = 250;
+  static const durationV350 = 350;
   static const duration500 = 500;
   static const imageAspectRatio = 2.6 / 3.8;
   static const bestSellerAspectRatio = 2.6 / 3.9;

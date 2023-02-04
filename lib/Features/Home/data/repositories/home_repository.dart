@@ -9,7 +9,7 @@ import '../models/BookModel.dart';
 class HomeRepository extends BaseHomeRepository {
   late final ApiService apiService;
   BookModel? bookModel;
-  HomeRepository(ApiService apiService);
+  HomeRepository(this.apiService);
 
   @override
   Future<Either<Failure, BookModel>> getNewestBooks() async {
