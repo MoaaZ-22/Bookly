@@ -12,5 +12,6 @@ class StringsManager
 
 class EndPoints
 {
-  static const newestBooks = 'volumes?q=subject:programming';
+  static const newestBooksPath= 'volumes?Filtering=free-ebooks&Sorting=newest&q=subject:programming';
+  static const featuredBooksPath = 'volumes?Filtering=free-ebooks&q=subject:programming';
 }
