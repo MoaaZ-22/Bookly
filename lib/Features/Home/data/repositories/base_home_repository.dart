@@ -1,6 +1,6 @@
 import 'package:bookly/core/errors/failures.dart';
 import 'package:dartz/dartz.dart';
-import '../models/BookModel.dart';
+import '../models/book_model.dart';
 
 abstract class BaseHomeRepository
 {

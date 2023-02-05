@@ -22,16 +22,16 @@ class GlassPlayButton extends StatelessWidget {
         minWidth: AppValues.v0,
         shape: const CircleBorder(
             side:
-                BorderSide(width: AppValues.v1, color: ColorsManager.white38)),
+                BorderSide(width: AppValues.v1_5, color: ColorsManager.white38)),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(AppValues.v100),
           child: BackdropFilter(
             filter:
-                ImageFilter.blur(sigmaX: AppValues.v4, sigmaY: AppValues.v4),
+                ImageFilter.blur(sigmaX: AppValues.v10, sigmaY: AppValues.v10),
             child: Container(
                 padding: const EdgeInsets.all(AppValues.v10),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(AppValues.v0),
+                  color: Colors.grey.withOpacity(AppValues.v0),
                   gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,

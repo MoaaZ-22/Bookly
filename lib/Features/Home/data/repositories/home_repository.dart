@@ -4,7 +4,7 @@ import 'package:bookly/core/resources/api_service.dart';
 import 'package:bookly/core/resources/strings_manager.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import '../models/BookModel.dart';
+import '../models/book_model.dart';
 
 class HomeRepository extends BaseHomeRepository {
   late final ApiService apiService;
